@@ -26,19 +26,30 @@ panel at a time when editing the same sequence.
 
 ## Install the panel
 
-1. Download **Legenda-Studio-0.4.0-CEP-EN.zxp** from this repository.
-2. Install it with a CEP/ZXP installer that supports self-signed packages.
+Download the files from the [English v0.4.0 release](https://github.com/maiki74/Legenda-Studio/releases/tag/v0.4.0-en):
+
+- [Premiere plugin — Legenda-Studio-0.4.0-CEP-EN.zxp](https://github.com/maiki74/Legenda-Studio/releases/download/v0.4.0-en/Legenda-Studio-0.4.0-CEP-EN.zxp)
+- [Local engine — Legenda-Studio-Engine-0.4.0-EN.zip](https://github.com/maiki74/Legenda-Studio/releases/download/v0.4.0-en/Legenda-Studio-Engine-0.4.0-EN.zip)
+- [SHA-256 checksums](https://github.com/maiki74/Legenda-Studio/releases/download/v0.4.0-en/SHA256SUMS.txt)
+
+1. Download the **.zxp** plugin asset above.
+2. Open the **.zxp** with your external Adobe CEP/ZXP extension installer and install it.
+   The installer must support self-signed development packages.
 3. Restart Premiere. Open **Window > Extensions > Legenda Studio CEP (English)**.
    Your Premiere installation may call this menu **Extensions (Legacy)**.
+
+The **.zxp is an installation package**. Install it as-is; you do not need to
+rename, open, or extract it to set up the engine.
 
 No third-party installer is bundled. The package does not change Adobe debug
 settings. Opening the panel does not issue timeline-editing commands.
 
 ## Prepare the local engine
 
-The ZXP contains `motor-local.zip`. In the panel, click **Save local engine**,
-then extract the ZIP to a folder where you can write files. A ZIP reader can also
-extract it directly from the ZXP.
+Download **Legenda-Studio-Engine-0.4.0-EN.zip** separately from the same release.
+Extract **that engine ZIP** to a folder where you can write files. It contains
+the engine source, dependency lists, `setup.ps1`, `start-engine.ps1`, and this guide.
+This download is independent of the plugin installer.
 
 Requirements: 64-bit Python 3.10+, an NVIDIA GPU compatible with CUDA 12,
 a compatible driver, and enough available GPU memory for Whisper large-v3.
